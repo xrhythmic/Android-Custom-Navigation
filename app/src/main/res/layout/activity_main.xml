@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipToPadding="false"
-        android:clipChildren="false">
+        android:clipChildren="false"
+        android:clipToPadding="false">
 
         <fragment
             android:id="@+id/nav_host_fragment"
@@ -20,10 +21,9 @@
             android:id="@+id/expanded_menu_lay"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:clipToPadding="false"
             android:clipChildren="false"
-            >
-           <!-- Ignore This Warning As ExpandableFabLayout Extends CoordinatorLayout-->
+            android:clipToPadding="false">
+            <!-- Ignore This Warning As ExpandableFabLayout Extends CoordinatorLayout-->
             <com.google.android.material.bottomappbar.BottomAppBar
                 android:id="@+id/bottom_app_bar"
                 android:layout_width="match_parent"
@@ -62,28 +62,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:fab_icon="@drawable/ic_baseline_settings_24"
-                app:label_text="Setting"/>
+                app:label_text="Setting" />
 
             <com.nambimobile.widgets.efab.FabOption
                 android:id="@+id/add_people"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:fab_icon="@drawable/ic_baseline_person_24"
-                app:label_text="Profile"/>
+                app:label_text="Profile" />
 
             <com.nambimobile.widgets.efab.FabOption
                 android:id="@+id/add_file"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:fab_icon="@drawable/ic_baseline_create_new_folder_24"
-                app:label_text="Files"/>
+                app:label_text="Files" />
 
             <com.nambimobile.widgets.efab.FabOption
                 android:id="@+id/camera"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:fab_icon="@drawable/ic_baseline_camera_alt_24"
-                app:label_text="Camera"/>
+                app:label_text="Camera" />
         </com.nambimobile.widgets.efab.ExpandableFabLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>
