@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+
+        <fragment
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="?actionBarSize"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/mobile_navigation" />
+
+        <com.nambimobile.widgets.efab.ExpandableFabLayout
+            android:id="@+id/expanded_menu_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            >
+           <!-- Ignore This Warning As ExpandableFabLayout Extends CoordinatorLayout-->
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottom_app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:backgroundTint="@color/white"
+                android:hapticFeedbackEnabled="true"
+                app:contentInsetEnd="0dp"
+                app:contentInsetStart="0dp"
+                app:fabAlignmentMode="end"
+                app:hideOnScroll="true"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/nav_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="90dp"
+                    android:outlineProvider="none"
+                    android:paddingLeft="4dp"
+                    app:itemIconSize="24dp"
+                    app:labelVisibilityMode="auto"
+                    app:menu="@menu/bottom_nav_menu" />
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+            <com.nambimobile.widgets.efab.ExpandableFab
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_add_24"
+                app:layout_anchor="@id/bottom_app_bar" />
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:id="@+id/setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_icon="@drawable/ic_baseline_settings_24"
+                app:label_text="Setting"/>
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:id="@+id/add_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_icon="@drawable/ic_baseline_person_24"
+                app:label_text="Profile"/>
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:id="@+id/add_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_icon="@drawable/ic_baseline_create_new_folder_24"
+                app:label_text="Files"/>
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_icon="@drawable/ic_baseline_camera_alt_24"
+                app:label_text="Camera"/>
+        </com.nambimobile.widgets.efab.ExpandableFabLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

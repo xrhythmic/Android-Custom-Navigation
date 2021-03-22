@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Bottom Navigation With Expandable Floating Button Example In Kotlin"

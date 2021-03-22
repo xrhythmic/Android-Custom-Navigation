@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Bottom Navigation With Expandable Floating Button Example In Kotlin</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
