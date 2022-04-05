@@ -62,28 +62,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:fab_icon="@drawable/ic_baseline_settings_24"
-                app:label_text="Setting" />
+                app:label_text="Settings" />
 
             <com.nambimobile.widgets.efab.FabOption
                 android:id="@+id/add_people"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:fab_icon="@drawable/ic_baseline_person_24"
-                app:label_text="Profile" />
+                app:label_text="My Profile" />
 
             <com.nambimobile.widgets.efab.FabOption
                 android:id="@+id/add_file"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:fab_icon="@drawable/ic_baseline_create_new_folder_24"
-                app:label_text="Files" />
+                app:fab_icon="@drawable/ic_baseline_add_location_alt_24"
+                app:label_text="Add POI" />
 
             <com.nambimobile.widgets.efab.FabOption
                 android:id="@+id/camera"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:fab_icon="@drawable/ic_baseline_camera_alt_24"
-                app:label_text="Camera" />
+                app:label_text="Take a photo!" />
         </com.nambimobile.widgets.efab.ExpandableFabLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>
